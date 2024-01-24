@@ -24,3 +24,20 @@ function isValid(s: string): boolean {
   return stack.length === 0;
 }
 // @lc code=end
+
+// s="{}"
+// 1
+// stack=['{'}]
+// 2
+// stack.pop()='{'
+// pairs[char]='}'
+
+// s="[{}]"
+// 1 [
+// stack=['[']
+// 2 {
+// stack=['[', '{']
+// 3 }
+// stack.pop()='{' pairs[char]='{'
+// 4 ]
+// stack.pop()='[' pairs[char]='['
