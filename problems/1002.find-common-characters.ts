@@ -6,7 +6,7 @@
 
 // @lc code=start
 function commonChars(words: string[]): string[] {
-  let wordArr = words[0].split(""); // "bella" => ["b", "e", "l", "l", "a"]
+  let wordArr = words[0].split(""); //  "bella" => ["b", "e", "l", "l", "a"]
 
   for (let i = 1; i < words.length; i++) {
     const newCheck: string[] = [];
