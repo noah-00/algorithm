@@ -19,7 +19,7 @@
  * }
  */
 
-import { TreeNode } from "./Tree";
+import { TreeNode } from "../Tree";
 
 const isSymmetric = (root: TreeNode | null): boolean => {
   return isMirror(root, root);
