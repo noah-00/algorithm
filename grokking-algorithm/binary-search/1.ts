@@ -1,17 +1,17 @@
 const binarySearch = (list: number[], item: number): number | null => {
-	let low = 0;
-	let high = list.length - 1;
+	let left = 0;
+	let right = list.length - 1;
 
-	while (low <= high) {
-		const middleIndex = Math.floor((low + high) / 2);
-		const guess = list[middleIndex];
+	while (left <= right) {
+		const middle = Math.floor((left + right) / 2);
+		const guess = list[middle];
 
-		if (guess === item) return middleIndex;
+		if (guess === item) return middle;
 
 		if (guess > item) {
-			high = middleIndex - 1;
+			right = middle - 1;
 		} else {
-			low = middleIndex + 1;
+			left = middle + 1;
 		}
 	}
 
