@@ -1,3 +1,5 @@
+export {};
+
 const binarySearch = (list: number[], target: number): number | null => {
 	let left = 0;
 	let right = list.length - 1;
